@@ -32,7 +32,7 @@ function showRandomQuote() {
   `;
 }
 
-function addQuote() {
+function createAddQuoteForm() {
   const newQuoteText = document.querySelector("#newQuoteText").value;
   const newQuoteCategory = document.querySelector("#newQuoteCategory").value;
   const newQuoteAuthor =
