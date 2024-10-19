@@ -2,22 +2,22 @@ const quoteDisplay = document.querySelector("#quoteDisplay");
 const newQuote = document.querySelector("#newQuote");
 const quotes = [
   {
-    quote: "Be not simply good - be good for something.",
+    text: "Be not simply good - be good for something.",
     author: "Henry David Thoreau",
     category: "Good",
   },
   {
-    quote: "Every failure is a step to success.",
+    text: "Every failure is a step to success.",
     author: "William Whewell",
     category: "Failure",
   },
   {
-    quote: "The difficulty in life is the choice.",
+    text: "The difficulty in life is the choice.",
     author: "George A. Moore",
     category: "Life",
   },
   {
-    quote: "Remember we're all in this alone.",
+    text: "Remember we're all in this alone.",
     author: "Lily Tomlin",
     category: "Alone",
   },
@@ -26,7 +26,7 @@ const quotes = [
 function showRandomQuote() {
   index = Math.floor(Math.random() * quotes.length);
   quoteDisplay.innerHTML = `
-    <blockquote><p>&ldquo;${quotes[index]["quote"]}&rdquo;</p></blockquote>
+    <blockquote><p>&ldquo;${quotes[index]["text"]}&rdquo;</p></blockquote>
     <p>${quotes[index]["author"]}</p>
     <p class="category">#${quotes[index]["category"]}</p>
   `;
