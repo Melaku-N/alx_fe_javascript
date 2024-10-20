@@ -52,6 +52,7 @@ function createAddQuoteForm() {
   } else {
     alert("Please ensure that you fill in both the quote and its category.");
   }
+  document.createElement("sth").appendChild("sth");
 }
 
 newQuote.addEventListener("click", showRandomQuote);
